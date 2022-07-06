@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">clinicaFINAL</string>
+    <string name="app_name">Livros</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="menu_principal_label">Menu principal</string>
+    <string name="lista_animal_label">Animal</string>
+    <string name="raca">Raca</string>
+    <string name="animal">Animal</string>
+    <string name="previous">Previous</string>
+    <string name="inserir_animal_label">Inserir animal</string>
+
+
+    <string name="inserir">Inserir</string>
+    <string name="alterar">Alterar</string>
+    <string name="eliminar">Eliminar</string>
+
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="nome_obrigatorio">Preencha o nome</string>
+    <string name="tipo_obrigatorio">Preencha o tipo</string>
+    <string name="raca_obrigatoria">Escolha uma raca</string>
+
+    <string name="animal_guardado_sucesso">animal inserido com sucesso</string>
+    <string name="animal_eliminado_sucesso">animal eliminado com sucesso</string>
+
+    <string name="erro_guardar_animal">Erro ao guardar animal</string>
+    <string name="erro_eliminar_animal">Erro ao eliminar animal</string>
+
+    <string name="confirma_eliminar_animal">Tem a certeza que pretende eliminar o animal?</string>
 </resources>

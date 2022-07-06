@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuPrincipalFragment">
+
+    <fragment
+        android:id="@+id/MenuPrincipalFragment"
+        android:name="com.clinicafinal.MenuPrincipalFragment"
+        android:label="@string/menu_principal_label"
+        tools:layout="@layout/fragment_menu_principal">
+
+        <action
+            android:id="@+id/action_MenuPrincipal_to_ListaAnimal"
+            app:destination="@id/ListaAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ListaAnimalFragment"
+        android:name="com.clinicafinal.ListaAnimalFragment"
+        android:label="@string/lista_animal_label"
+        tools:layout="@layout/fragment_lista_animal">
+
+        <action
+            android:id="@+id/action_ListaAnimal_to_MenuPrincipal"
+            app:destination="@id/MenuPrincipalFragment" />
+        <action
+            android:id="@+id/action_ListaClinicaFragment_to_InserirAnimalFragment"
+            app:destination="@id/InserirAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InserirAnimalFragment"
+        android:name="com.clinicafinal.InserirAnimalFragment"
+        android:label="@string/inserir_animal_label"
+        tools:layout="@layout/fragment_inserir_animal">
+        <action
+            android:id="@+id/action_InserirAnimalFragment_to_ListaAnimalFragment"
+            app:destination="@id/ListaAnimalFragment" />
+        <action
+            android:id="@+id/action_ListaClinicaFragment_to_EliminarAnimalFragment"
+            app:destination="@id/EliminarAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EliminarAnimalFragment"
+        android:name="com.clinicafinal.EliminarAnimalFragment"
+        android:label="fragment_eliminar_animal"
+        tools:layout="@layout/fragment_eliminar_animal" >
+        <action
+            android:id="@+id/action_EliminarAnimalFragment_to_ListaClinicaFragment"
+            app:destination="@id/ListaClinicaFragment" />
+        <argument
+            android:name="animal"
+            app:argType="com.clinicafinal.animal" />
+    </fragment>
+</navigation>
